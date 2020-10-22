@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS CSS Popup modal</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div class="page">
+        <div class="button large popup-button" data-target="#popup-main">Main Popup</div>
+        <div class="button large popup-button" data-target="#popup-secondary">Secondary Popup</div>
+    </div>
+
+    <div class="popup" id="popup-main">
+        <div class="popup-overlay popup-button" data-target="#popup-main"></div>
+        <div class="popup-inner">
+            <h2>Popup Main Title</h2>
+            <h3>Main Subtitle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, amet itaque porro doloribus cum ratione nihil ex possimus necessitatibus placeat! Molestias explicabo excepturi vel totam quia voluptatem minus corporis saepe.</p>
+            <button class="button popup-button" data-target="#popup-main">Close</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-secondary">
+        <div class="popup-overlay popup-button" data-target="#popup-secondary"></div>
+        <div class="popup-inner">
+            <h2>Popup Secondary Title</h2>
+            <h3>Secondary Subtitle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, amet itaque porro doloribus cum ratione
+                nihil ex possimus necessitatibus placeat! Molestias explicabo excepturi vel totam quia voluptatem minus
+                corporis saepe.</p>
+            <button class="button popup-button" data-target="#popup-secondary">Close</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
